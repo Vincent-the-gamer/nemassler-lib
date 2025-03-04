@@ -1,0 +1,14 @@
+[package]
+name = "nemassler-lib"
+description = "An node library of nemassler, built in Rust."
+version = "0.1.0"
+license = "MIT"
+edition = "2021"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ncmdump = "0.8.0"
+neon = "1"
