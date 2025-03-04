@@ -1,5 +1,7 @@
 # nemassler-lib
 
+A Node.js library of nemassler, built in Rust.
+
 > [!NOTE]
 > Work in progress.
 

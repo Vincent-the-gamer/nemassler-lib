@@ -1,6 +1,6 @@
 [package]
 name = "nemassler-lib"
-description = "An node library of nemassler, built in Rust."
+description = "A Node.js library of nemassler, built in Rust."
 version = "0.1.0"
 license = "MIT"
 edition = "2021"

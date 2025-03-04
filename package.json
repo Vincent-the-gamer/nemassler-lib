@@ -1,7 +1,7 @@
 {
   "name": "nemassler-lib",
   "version": "0.1.0",
-  "description": "An node library of nemassler, built in Rust.",
+  "description": "A Node.js library of nemassler, built in Rust.",
   "main": "index.node",
   "scripts": {
     "test": "cargo test",
@@ -12,7 +12,9 @@
     "debug": "pnpm run cargo-build",
     "build": "pnpm run cargo-build --release",
     "cross": "pnpm run cross-build --release",
-    "tsx": "tsx"
+    "tsx": "tsx",
+    "npm:login": "pnpm login --registry https://registry.npmjs.org/",
+    "publish": "pnpm publish"
   },
   "author": "Vincent-the-gamer",
   "homepage": "https://github.com/Vincent-the-gamer/nemassler-lib#readme",
