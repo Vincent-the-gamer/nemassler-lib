@@ -1,14 +1,15 @@
 {
   "name": "nemassler-lib",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha",
   "description": "A Node.js library of nemassler, built in Rust.",
-  "main": "index.node",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "cargo test",
-    "cargo-build": "cargo build --message-format=json-render-diagnostics > cargo.log",
-    "cross-build": "cross build --message-format=json-render-diagnostics > cross.log",
-    "postcargo-build": "neon dist < cargo.log",
-    "postcross-build": "neon dist -m /target < cross.log",
+    "test": "cd native && cargo test",
+    "cargo-build": "cd native && cargo build --message-format=json-render-diagnostics > cargo.log",
+    "cross-build": "cd native && cross build --message-format=json-render-diagnostics > cross.log",
+    "postcargo-build": "cd native && neon dist < cargo.log",
+    "postcross-build": "cd native && neon dist -m /target < cross.log",
+    "clean": "cd native && cargo clean",
     "debug": "pnpm run cargo-build",
     "build": "pnpm run cargo-build --release",
     "cross": "pnpm run cross-build --release",
@@ -22,9 +23,19 @@
     "type": "git",
     "url": "git+https://github.com/Vincent-the-gamer/nemassler-lib.git"
   },
+  "keywords": [
+    "netease-cloud-music",
+    "netease",
+    "music",
+    "nemassler"
+  ],
   "bugs": {
     "url": "https://github.com/Vincent-the-gamer/nemassler-lib/issues"
   },
+  "files": [
+    "native/index.node",
+    "lib"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com",
     "access": "public"
