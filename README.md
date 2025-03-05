@@ -1,15 +1,12 @@
 # nemassler-lib
 
-A Node.js library of nemassler, built in Rust.
+A Node.js library of [nemassler](https://github.com/Vincent-the-gamer/nemassler), built in Rust.
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![bundle][bundle-src]][bundle-href]
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
-
-> [!NOTE]
-> Work in progress.
 
 # Usage
 
@@ -19,10 +16,20 @@ npm i nemassler-lib
 ```
 
 ## Use in Node.js
+Transform Netease Music `.ncm` files to `.mp3` format.
+
 ```ts
 import { ncm2mp3 } from "nemassler-lib"
 
+/**
+ * function ncm2mp3(ncmDirectory, mp3Directory): string[]
+ * 
+ * You need to create ncm folder yourself.
+ * mp3 output folder will be generated automatically.
+ */
 const result = ncm2mp3("/xxx/ncm","/xxx/mp3")
+
+// output: ['<success message>: <song name>']
 ```
 
 # Dev
