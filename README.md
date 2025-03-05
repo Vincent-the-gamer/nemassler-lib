@@ -34,9 +34,9 @@ const result = ncm2mp3("/xxx/ncm","/xxx/mp3")
 
 # Dev
 ```shell
-pnpm i && cargo check
-
-pnpm run debug
+pnpm i
+cd native && cargo check
+cd .. && pnpm run debug
 ```
 
 # License
