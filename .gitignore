@@ -4,7 +4,7 @@ index.node
 **/node_modules
 **/.DS_Store
 npm-debug.log*cargo.log
-cross.log
-cargo.log
-index.node
+**/cross.log
+**/cargo.log
+**/index.node
 pnpm-lock.yaml
