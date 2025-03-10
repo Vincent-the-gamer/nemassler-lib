@@ -23,7 +23,7 @@ Transform Netease Music `.ncm` files into `.mp3` format.
 import { processFile } from "nemassler-lib"
 
 /**
- * function processFile(ncmDirectory, mp3Directory, fileName): string[]
+ * function processFile(ncmDirectory, mp3Directory, fileName): string
  * 
  * mp3 output folder will be generated automatically.
  */
