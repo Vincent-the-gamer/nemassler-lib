@@ -1,6 +1,6 @@
 {
   "name": "nemassler-lib",
-  "version": "0.1.1-alpha.1",
+  "version": "0.1.1",
   "description": "A Node.js library of nemassler, built in Rust.",
   "main": "lib/index.js",
   "scripts": {
