@@ -16,8 +16,24 @@ npm i nemassler-lib
 ```
 
 ## Use in Node.js
-Transform Netease Music `.ncm` files to `.mp3` format.
+Transform Netease Music `.ncm` files into `.mp3` format.
 
+### Transform single file
+```ts
+import { processFile } from "nemassler-lib"
+
+/**
+ * function processFile(ncmDirectory, mp3Directory, fileName): string[]
+ * 
+ * mp3 output folder will be generated automatically.
+ */
+const result: string = processFile("/xxx/ncm","/xxx/mp3", "test.ncm")
+
+// output: 'Output file: /xxx/mp3/test.mp3'
+```
+
+
+### Transform multiple files
 ```ts
 import { ncm2mp3 } from "nemassler-lib"
 
@@ -27,9 +43,9 @@ import { ncm2mp3 } from "nemassler-lib"
  * You need to create ncm folder yourself.
  * mp3 output folder will be generated automatically.
  */
-const result = ncm2mp3("/xxx/ncm","/xxx/mp3")
+const result: string[] = ncm2mp3("/xxx/ncm","/xxx/mp3")
 
-// output: ['<success message>: <song name>']
+// output: ['Output file: /xxx/mp3/<name>.mp3']
 ```
 
 # Dev

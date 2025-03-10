@@ -81,6 +81,9 @@ pub fn process_file(mut cx: FunctionContext) -> JsResult<JsString> {
     let out_dir = cx.argument::<JsString>(1)?.value(&mut cx);
     let file_name = cx.argument::<JsString>(2)?.value(&mut cx);
 
+    ensure_directory_exists(&ncm_dir);
+    ensure_directory_exists(&out_dir);
+
     let handle_result = transform(&ncm_dir,&out_dir, &file_name);
 
     match handle_result {
