@@ -1,0 +1,41 @@
+{
+  "name": "nemassler-lib",
+  "description": "Node.js library of nemassler, which to transform .ncm audio files to .mp3.",
+  "author": "Vincent-the-gamer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/Vincent-the-gamer/nemassler-lib",
+  "napi": {
+    "binaryName": "nemassler-lib",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "3.0.0-alpha.76",
+    "@types/node": "^22.15.16",
+    "tsx": "^4.19.4"
+  },
+  "ava": {
+    "timeout": "3m"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:cross": "napi build --platform --release --use-cross",
+    "dev": "napi build --platform",
+    "dev:cross": "napi build --platform --use-cross",
+    "prepublishOnly": "napi prepublish -t npm --skip-gh-release",
+    "test": "tsx",
+    "clean": "tsx ./clean.ts",
+    "rename": "napi rename",
+    "version": "napi version"
+  }
+}
