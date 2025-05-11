@@ -1,5 +1,5 @@
 {
-  "name": "nemassler-lib-darwin-x64",
+  "name": "@vince-gamer/nemassler-lib-darwin-x64",
   "version": "1.0.0",
   "os": [
     "darwin"
