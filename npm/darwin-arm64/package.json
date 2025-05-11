@@ -21,6 +21,6 @@
     "darwin"
   ],
   "scripts": {
-    "publish": "pnpm publish --registry https://registry.npmjs.org/"
+    "publish": "pnpm publish --registry https://registry.npmjs.org/ --access public"
   }
 }
