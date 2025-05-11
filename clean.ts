@@ -1,31 +1,49 @@
 import { napi } from "./package.json"
 import fs from "fs"
 
-const dotNodeFiles = [
+const targets = [
     "darwin-arm64",
     "darwin-x64",
     "linux-x64-gnu",
+    "linux-arm64-gnu",
     "win32-x64-msvc"
-].map(i => `${napi.binaryName}.${i}.node`)
-
-const buildFileList = [
-    "index.js",
-    "index.d.ts",
-    ...dotNodeFiles
 ]
 
+
 function deleteFile() {
-    buildFileList.forEach(file => {
+    targets.forEach(target => {
+        // delete .node files
         try {
-            if(fs.existsSync(`./${file}`)) {
-                fs.unlinkSync(`./${file}`)
-                console.log(`Deleted file: ./${file}`)
+            const nodeFileName = `${napi.binaryName}.${target}.node`
+            if (fs.existsSync(`./npm/${target}/${nodeFileName}`)) {
+                fs.unlinkSync(`./npm/${target}/${nodeFileName}`)
+                console.log(`Deleted file: ./npm/${target}/${nodeFileName}`)
+            } else { 
+                console.log(`./npm/${target}/${nodeFileName} is not found!`) 
             }
-            console.log(`./${file} is not found!`)
-        } catch(err) {
+        } catch (err) {
             console.error(`Error: ${err}`)
         }
-   })
+    })
+
+    // delete index.js and index.d.ts
+    try {
+        if (fs.existsSync(`./index.js`)) {
+            fs.unlinkSync(`./index.js`)
+            console.log(`Deleted file: ./index.js`)
+        } else {
+            console.log(`./index.js is not found!`)
+        }
+
+        if (fs.existsSync(`./index.d.ts`)) {
+            fs.unlinkSync(`./index.d.ts`)
+            console.log(`Deleted file: ./index.d.ts`)
+        } else {
+            console.log(`./index.d.ts is not found!`)
+        }
+    } catch (err) {
+        console.error(`Error: ${err}`)
+    }
 }
 
 deleteFile()
