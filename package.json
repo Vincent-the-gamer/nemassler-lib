@@ -2,7 +2,7 @@
   "name": "@vince-gamer/nemassler-lib",
   "description": "Node.js library of nemassler, which to transform .ncm audio files to .mp3",
   "author": "Vincent-the-gamer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
