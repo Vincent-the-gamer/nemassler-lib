@@ -12,7 +12,6 @@ Supported:
 - Linux(GNU, x64)
 - Linux(GNU, arm64)
 
-
 # Installation
 
 ```shell
