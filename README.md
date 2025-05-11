@@ -1,9 +1,15 @@
 # nemassler-lib
 
-Napi-rs is a framework to build Node.js libraries in Rust.
+Node.js library of nemassler, which to transform `.ncm` audio files to `.mp3`
 
-> [!NOTE]
-> Work in progress.
+# Currently Supported
+
+> [!IMPORTANT]
+> This module is using `.node` binary file, so it is not compatible to every OS.
+
+Supported:
+- macOS(Apple Silicon)
+
 
 # Installation
 

@@ -40,10 +40,11 @@
     "clean": "tsx ./clean.ts",
     "rename": "napi rename",
     "version": "napi version",
+    "prepublishOnly": "napi prepublish -t npm",
     "login": "npm login --registry https://registry.npmjs.org/",
-    "publish": "npm publish --registry https://registry.npmjs.org/ --access public"
+    "publish": "npm publish --registry https://registry.npmjs.org/ --access=public"
   },
   "optionalDependencies": {
-    "@vince-gamer/nemassler-lib-darwin-arm64": "1.0.1"
+    "@vince-gamer/nemassler-lib-darwin-arm64": "1.0.2"
   }
 }
