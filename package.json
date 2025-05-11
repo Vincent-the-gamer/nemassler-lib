@@ -2,7 +2,7 @@
   "name": "@vince-gamer/nemassler-lib",
   "description": "Node.js library of nemassler, which to transform .ncm audio files to .mp3",
   "author": "Vincent-the-gamer",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
@@ -45,8 +45,6 @@
     "publish": "npm publish --registry https://registry.npmjs.org/ --access=public"
   },
   "optionalDependencies": {
-    "@vince-gamer/nemassler-lib-darwin-arm64": "1.0.0",
-    "@vince-gamer/nemassler-lib-linux-arm64-gnu": "1.0.0",
-    "@vince-gamer/nemassler-lib-linux-x64-gnu": "1.0.0"
+    "@vince-gamer/nemassler-lib-darwin-arm64": "1.0.0"
   }
 }
