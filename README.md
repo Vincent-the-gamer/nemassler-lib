@@ -5,10 +5,12 @@ Node.js library of nemassler, which to transform `.ncm` audio files to `.mp3`
 # Currently Supported
 
 > [!IMPORTANT]
-> This module is using `.node` binary file, so it is not compatible to every OS.
+> This module is using `.node` binary file, so it is only compatible with these following systems.
 
 Supported:
 - macOS(Apple Silicon)
+- Linux(GNU, x64)
+- Linux(GNU, arm64)
 
 
 # Installation

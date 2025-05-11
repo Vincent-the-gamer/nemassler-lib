@@ -45,6 +45,8 @@
     "publish": "npm publish --registry https://registry.npmjs.org/ --access=public"
   },
   "optionalDependencies": {
-    "@vince-gamer/nemassler-lib-darwin-arm64": "1.0.2"
+    "@vince-gamer/nemassler-lib-linux-x64-gnu": "1.0.3",
+    "@vince-gamer/nemassler-lib-linux-arm64-gnu": "1.0.3",
+    "@vince-gamer/nemassler-lib-darwin-arm64": "1.0.3"
   }
 }
