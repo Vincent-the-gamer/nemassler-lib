@@ -2,10 +2,10 @@
 
 Node.js library of nemassler, which to transform `.ncm` audio files to `.mp3`
 
-# Currently Supported
+# Currently Supported OS
 
 > [!IMPORTANT]
-> This module is using `.node` binary file, so it is only compatible with these following systems.
+> This module is Rust-based, it uses `.node` binary file, so it is only compatible with these following systems.
 
 Supported:
 - macOS(Apple Silicon)
@@ -23,7 +23,7 @@ npm i @vince-gamer/nemassler-lib
 ```ts
 import { ncm2mp3 } from "@vince-gamer/nemassler-lib"
 
-const msg = ncm2mp3("~/Downloads/ncm", "~/Downloads/mp3")
+const msg = ncm2mp3("/path/to/ncm", "/path/to/mp3")
 
-console.log(msg) // [ 'Output file: ~/Downloads/mp3/xxx.mp3' ]
+console.log(msg) // [ 'Output file: /path/to/xxx.mp3' ]
 ```
