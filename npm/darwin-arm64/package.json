@@ -19,5 +19,8 @@
   "repository": "https://github.com/Vincent-the-gamer/nemassler-lib",
   "os": [
     "darwin"
-  ]
+  ],
+  "scripts": {
+    "publish": "pnpm publish --registry https://registry.npmjs.org/"
+  }
 }
