@@ -1,6 +1,6 @@
 {
   "name": "@vince-gamer/nemassler-lib-darwin-arm64",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "cpu": [
     "arm64"
   ],
