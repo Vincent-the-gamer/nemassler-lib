@@ -1,6 +1,6 @@
 {
-  "name": "nemassler-lib",
-  "description": "Node.js library of nemassler, which to transform .ncm audio files to .mp3.",
+  "name": "@vince-gamer/nemassler-lib",
+  "description": "Node.js library of nemassler, which to transform .ncm audio files to .mp3",
   "author": "Vincent-the-gamer",
   "version": "1.0.0",
   "main": "index.js",
@@ -12,7 +12,8 @@
       "additional": [
         "aarch64-apple-darwin"
       ]
-    }
+    },
+    "name": "nemassler-lib"
   },
   "license": "MIT",
   "devDependencies": {
@@ -36,6 +37,7 @@
     "test": "tsx",
     "clean": "tsx ./clean.ts",
     "rename": "napi rename",
-    "version": "napi version"
+    "version": "napi version",
+    "login": "pnpm login --registry https://registry.npmjs.org/"
   }
 }

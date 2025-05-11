@@ -6,7 +6,7 @@ use crate::utils::{
     filter_by_suffix
 };
 
-pub fn process_file(ncm_dir: &str, out_dir: &str, file_name: &str) -> std::io::Result<String> {
+fn process_file(ncm_dir: &str, out_dir: &str, file_name: &str) -> std::io::Result<String> {
     let no_suffix_file_name = file_name.strip_suffix(".ncm").unwrap();
     let mp3_file_name = format!("{}.mp3", no_suffix_file_name);
     let mut ncm_dir = ncm_dir;

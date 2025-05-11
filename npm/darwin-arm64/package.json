@@ -1,11 +1,13 @@
 {
-  "name": "nemassler-lib-darwin-arm64",
+  "name": "@vince-gamer/nemassler-lib-darwin-arm64",
   "version": "1.0.0",
   "cpu": [
     "arm64"
   ],
   "main": "nemassler-lib.darwin-arm64.node",
   "files": [
+    "index.js",
+    "index.d.ts",
     "nemassler-lib.darwin-arm64.node"
   ],
   "description": "Node.js library of nemassler, which to transform .ncm audio files to .mp3.",
